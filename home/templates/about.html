@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block title_block%}
+About
+{% endblock %}
+
+{% block body_block %}
+
+    <div class="container">
+
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    <hr>
+                    <h2 class="intro-text text-center">Our
+                        <strong>History</strong>
+                    </h2>
+                    <hr>
+                </div>
+                <div class="col-md-6">
+                    <img class="img-responsive img-border-left" src="{% static "img/slide-2.jpg" %}" alt="">
+                </div>
+                <div class="col-md-6">
+                    <p>On 26th Aug 2012, three boys were hustling room to room and we're inviting hostlers at IIT for a lunch which was being served without onion and Garlic. 24 students came up and were served delicious vegetarian food without onion garlic and they loved it.</p>
+					<p> These were the first twenty four customers who registered themselves at the GRTA Apartments common room which was turned into a dining hall. People used to eat while sitting cross legged at floor and were served at their place. Three months Later Sattvik served about 600 meals a day and there used to be long queues during lunch time as all students used to come at one particular time. Sattvik later opened its doors for girls as well and now runs into two branches catering ..... meals a day!</p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+
+       
+
+    </div>
+    <!-- /.container -->
+{% endblock %}

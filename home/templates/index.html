@@ -1,0 +1,128 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{%block title_block %}
+Home
+{% endblock %}
+{% block body_block %}
+
+    <div class="container">
+
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-12 text-center">
+                    <iframe width="100%" height="489" src="https://www.youtube.com/embed/yLLkZ6guf5A" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <!--div id="carousel-example-generic" class="carousel slide">
+                        
+                        <ol class="carousel-indicators hidden-xs">
+                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        </ol>
+
+                       
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img class="img-responsive img-full" src="{% static "img/slide-1.jpg" %}"  alt="">
+                            </div>
+                            <div class="item">
+                                <img class="img-responsive img-full" src="{% static "img/slide-2.jpg" %}" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="img-responsive img-full" src="{% static "img/slide-3.jpg" %} " alt="">
+                            </div>
+                        </div >
+
+                    
+                        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                            <span class="icon-prev"></span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                            <span class="icon-next"></span>
+                        </a >
+                    </div-->
+                    <h2 class="brand-before">
+                        <small>Welcome to</small>
+                    </h2>
+                    <h1 class="brand-name">Sattvik Mess</h1>
+                    <hr class="tagline-divider">
+                    <h2>
+                        <small>By
+                            <strong>Students of IIT BHU</strong>
+                        </small>
+                    </h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    <hr>
+                    <h2 class="intro-text text-center">Our 
+                        <strong>Vision</strong>
+                    </h2>
+                    <hr>
+                    <img class="img-responsive img-border img-left" src="{% static  "img/intro-pic.jpg" %}" alt="">
+                    <hr class="visible-xs">
+                    <p>In contemporary era of diverse religious beliefs, living styles and liberal outlooks, it becomes pertinent for systems to cater diverse groups as per their needs and justified preferences. People from western India, Jainism and many other parts of India, particularly with a spiritual inclination, have profound researched belief system which gives much importance to food. In Hindi, it’s said “Jaisa Ann, Vaisa Mann”. Sattvik aims to cater food which keeps lightness in the mind, agility in the body and is conducive for people to meditate and pursue self enquiry.</p>
+                </div>
+            </div>
+        </div>
+
+
+		 <div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    <hr>
+                    <h2 class="intro-text text-center">Our
+                        <strong>Team</strong>
+                    </h2>
+                    <hr>
+                </div>
+                <!--  ye block he jaha jano ka info dalna he    -->
+                <div class="col-sm-4 text-center">
+                    <img class="img-responsive" src="{% static "img/imagename.jpg" %}" alt=""><!--imagename me tumhara jo bhi bande ki image ka naam he  aur image static folder me img me dal dena -->
+                    <h3>John Smith<!-- Yaha name aaega-->
+                        <small>Job Title</small><!-- yaha job aa jaega-->
+                    </h3>
+                </div>
+                <!-- yaha tak ka block repeat karna he -->
+                <div class="col-sm-4 text-center">
+                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
+                    <h3>John Smith
+                        <small>Job Title</small>
+                    </h3>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
+                    <h3>John Smith
+                        <small>Job Title</small>
+                    </h3>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
+                    <h3>John Smith
+                        <small>Job Title</small>
+                    </h3>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
+                    <h3>John Smith
+                        <small>Job Title</small>
+                    </h3>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
+                    <h3>John Smith
+                        <small>Job Title</small>
+                    </h3>
+                </div>                
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+
+{% endblock %}
+
