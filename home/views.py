@@ -27,7 +27,7 @@ def message(request):
     	sub,
     	message,
     	email,
-    	['dashora.chetan@gmail.com'],
+    	['sattvikmess@gmail.com'],
     	fail_silently=False,
 		)
 		# index(request)
