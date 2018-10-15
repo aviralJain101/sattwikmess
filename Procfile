@@ -1,1 +1,1 @@
-web: gunicorn kuwebsite.wsgi --timeout 50 --keep-alive 5 --log-level debug
+web: gunicorn satvik.wsgi --timeout 50 --keep-alive 5 --log-level debug
