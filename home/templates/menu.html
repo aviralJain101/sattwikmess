@@ -52,7 +52,7 @@ Home
 {% endblock %}
 
 {% block script_block %}
-
+<script>
   // Initialize Firebase
   var config = {
     apiKey: "AIzaSyD18iEby5n64R99xb5Zn7-JtZ_P2yO0LvI",
@@ -63,8 +63,8 @@ Home
     messagingSenderId: "1017119845438"
   };
   firebase.initializeApp(config);
-
-
+</script>
+<script type="text/javascript">
     var tb= document.getElementById("tb");
     var tl= document.getElementById("tl");
     var td= document.getElementById("td");
@@ -92,5 +92,5 @@ Home
         nl.innerText = datasnapshot.child("lunch").val();
         nd.innerText = datasnapshot.child("dinner").val();
     });
-
+</script>
 {% endblock %}
