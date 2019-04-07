@@ -47,7 +47,50 @@ Home
             </div>
         </div>
     </div>
-    
+
        
 {% endblock %}
 
+{% block script_block %}
+
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyD18iEby5n64R99xb5Zn7-JtZ_P2yO0LvI",
+    authDomain: "sattvikmess-a65c7.firebaseapp.com",
+    databaseURL: "https://sattvikmess-a65c7.firebaseio.com",
+    projectId: "sattvikmess-a65c7",
+    storageBucket: "sattvikmess-a65c7.appspot.com",
+    messagingSenderId: "1017119845438"
+  };
+  firebase.initializeApp(config);
+
+
+    var tb= document.getElementById("tb");
+    var tl= document.getElementById("tl");
+    var td= document.getElementById("td");
+    var tob= document.getElementById("tob");
+    var tol= document.getElementById("tol");
+    var tod= document.getElementById("tod");
+    var nb= document.getElementById("nb");
+    var nl= document.getElementById("nl");
+    var nd= document.getElementById("nd");
+   var firebaseHeadingRefToday= firebase.database().ref().child("board_sheet/menu_board/today");
+    firebaseHeadingRefToday.on('value', function(datasnapshot){
+        tb.innerText = datasnapshot.child("breakfast").val();
+        tl.innerText = datasnapshot.child("lunch").val();
+        td.innerText = datasnapshot.child("dinner").val();
+    });
+    var firebaseHeadingRefTomorrow= firebase.database().ref().child("board_sheet/menu_board/tomorrow");
+    firebaseHeadingRefTomorrow.on('value', function(datasnapshot){
+        tob.innerText = datasnapshot.child("breakfast").val();
+        tol.innerText = datasnapshot.child("lunch").val();
+        tod.innerText = datasnapshot.child("dinner").val();
+    });
+    var firebaseHeadingRefNext= firebase.database().ref().child("board_sheet/menu_board/next");
+    firebaseHeadingRefNext.on('value', function(datasnapshot){
+        nb.innerText = datasnapshot.child("breakfast").val();
+        nl.innerText = datasnapshot.child("lunch").val();
+        nd.innerText = datasnapshot.child("dinner").val();
+    });
+
+{% endblock %}
