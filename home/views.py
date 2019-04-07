@@ -15,7 +15,7 @@ def contact(request):
 
 
 def menu(request):
-	return HttpResponse("hi")
+	return render(request,"menu.html",{})
 
 def message(request):
 	if request.method=="POST":
